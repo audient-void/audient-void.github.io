@@ -1,0 +1,10 @@
+# Enable mod_rewrite if not already enable
+# Redirect all traffic to index.php (if you're using a front controller pattern)
+# RewriteRule ^$ index.php [L]
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_F
+# Set default index file
+DirectoryIndex index.html index.php
+
+# Enable directory browsing (optional)
+Options +Indexes
